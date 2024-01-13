@@ -4,8 +4,11 @@ import ExperienceForm from "./ExperienceForm";
 import { useState } from "react";
 
 function Bar({ handleInput }) {
-  const [educationForm, addEducationForm] = useState([
+  const [educationForm, setEducationForm] = useState([
     <EducationForm key={0} handleInput={handleInput} index={0} />,
+  ]);
+  const [experienceForm, setExperienceForm] = useState([
+    <ExperienceForm key={0} handleInput={handleInput} index={0} />,
   ]);
   //fuction that will respond to add another education button
   const handleAddEducationForm = () => {
@@ -14,7 +17,7 @@ function Bar({ handleInput }) {
       ...educationForm,
       <EducationForm key={index} handleInput={handleInput} index={index} />,
     ];
-    addEducationForm(newEducationForm);
+    setEducationForm(newEducationForm);
   };
 
   return (
@@ -24,8 +27,8 @@ function Bar({ handleInput }) {
       {educationForm.map((forms, index) => (
         <div key={index}> {forms} </div>
       ))}
-         
-     {educationForm.length <= 3 && (
+    
+      {educationForm.length <= 3 && (
         <button onClick={handleAddEducationForm}>Add</button>
       )}
 
