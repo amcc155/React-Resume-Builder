@@ -36,9 +36,11 @@ return (
     <main>
       <Bar
         data={data}
+        setData = {setData}
         handleInput={handleInput}
       />
-      <Resume data={data} experienceData={data.experience} />
+      
+      <Resume data={data} experienceData={data.experience} projectsData = {data.projects}/>
     </main>
   );
 }

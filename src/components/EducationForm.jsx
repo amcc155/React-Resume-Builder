@@ -1,12 +1,13 @@
-const educationForm = ({handleInput, index}) => {
+const educationForm = ({handleInput, index, data}) => {
   
   return (
     <>
       <h1> Education Info </h1>
       <form>
+        
         <label for="school"> School: {index} </label>
         <input
-          data-sectionindex = {index}
+          data-sectionIndex = {index}
           type="text"
           data-section="education"
           name="school"
@@ -16,11 +17,20 @@ const educationForm = ({handleInput, index}) => {
 
         <label for="major">Major: </label>
         <input
-          data-sectionIndex = {index}
+          data-sectionindex = {index}
           type="text"
           data-section="education"
           name="major"
           onChange={handleInput}
+        />
+
+        <label for = "minor">Minor: </label>
+        <input
+        data-sectionIndex = {index}
+        type = 'text'
+        data-section = "education"
+        name = "minor"
+        onChange = {handleInput}
         />
         <label for="gpa"> GPA: </label>
         <input
@@ -38,15 +48,6 @@ const educationForm = ({handleInput, index}) => {
           type="date"
           id="startDate"
           name="startDate"
-          data-section="education"
-          onChange={handleInput}
-        />
-        <label for = 'endDate'> End Date: </label>
-        <input
-        data-sectionIndex = {index}
-          type="date"
-          id="endDate"
-          name="endDate"
           data-section="education"
           onChange={handleInput}
         />

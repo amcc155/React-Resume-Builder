@@ -5,12 +5,17 @@
 
 main{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap:5rem;
+  margin-top:2rem;
 }
 
 .sideBar{
   display: flex;
   flex-direction: column;
+  height:700px;
+  width:300px;
+  overflow-y: auto;
 }
 form{
   display: flex;
@@ -33,9 +38,34 @@ form{
 
 .resume{
   width:600px;
+  border:1px solid black;
+  border-top:none;
+  padding:1rem;
+ 
 }
+
+.resumeSection{
+  margin-bottom:2rem;
+}
+
+#education{
+  display: flex;
+  justify-content: space-between;
+  }
 
 .resume h3{
   text-align: center;
   margin-bottom:0.5rem;
+}
+
+#startDate{
+  text-align: right;
+}
+
+.title{
+  font-weight: bold;
+}
+
+li{
+  margin-left:3rem;
 }

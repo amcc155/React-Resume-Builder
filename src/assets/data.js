@@ -5,7 +5,7 @@ const mockData = {
       name: 'John Doe',
       email: 'john@example.com',
       phone: '123-456-7890',
-      // Other personal information fields
+  
     },
 
     education:[
@@ -13,16 +13,29 @@ const mockData = {
     {
       school:'Indiana University',
       major:'Informatics',
+      minor:'Web Design',
       gpa: '4.0',
-      startDate: new Date(),
-      endDate: new Date()
+      startDate: new Date().toLocaleDateString(),
+      endDate: new Date().toLocaleDateString()
     }
     ],
+
+    projects:[
+    {
+      title:'Web App',
+      skills:'React/HTML/CSS',
+      description: [
+        'Did this',
+        'Also did this',
+        'And This'
+      ]
+    }
+
+  ],
   
     skills: {
       skill1: 'React',
       skill2: 'JavaScript',
-      // Other skill fields
     },
     experience: [
       {
@@ -33,7 +46,7 @@ const mockData = {
           'led the team',
           'did some stuff'
         ]
-        // Other fields for the first job experience
+      
       },
       {
         title: 'Intern',
@@ -43,9 +56,9 @@ const mockData = {
           'led the team',
           'did some stuff'
         ]
-        // Other fields for the second job experience
+     
       },
-      // Other job experiences as objects in the array
+     
     ],
   };
   
