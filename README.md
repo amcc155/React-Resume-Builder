@@ -8,9 +8,9 @@
   ### What I learned
   - Using state in React
   - Passing data through components
-  - How to structure a React project. I followed [https://react.dev/learn/thinking-in-react](This Site).
+  - How to structure a React project. I followed [This Site](https://react.dev/learn/thinking-in-react). 
 
 
   ### Things to add to the project
   - Feature for user to download the Resume
-  - Style it more
+  - Style it more(I was more focused on functionality for this projects)
