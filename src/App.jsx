@@ -17,10 +17,13 @@ function App() {
     if (!updatedData[section][sectionindex]) {
       updatedData[section][sectionindex] = {};
     }
+
     //if it the object value is list, specify the index in the array it is going to,
-    if (Array.isArray(updatedData[section][sectionindex][name])) {
+    if (arrayindex) {
       updatedData[section][sectionindex][name][arrayindex] = value;
       setData(updatedData);
+     
+      
     } else if (sectionindex) {
       // if there is more than one object, specify the index of the object
       updatedData[section][sectionindex][name] = value;
@@ -29,6 +32,8 @@ function App() {
       updatedData[section][name] = value;
       setData(updatedData);
     }
+
+    console.log(data)
   };
 
   return (

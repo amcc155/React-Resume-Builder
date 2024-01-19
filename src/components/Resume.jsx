@@ -4,32 +4,17 @@ import Education from "./Education";
 import Experience from "./Experience";
 import Projects from "./Projects";
 
-
-const Resume = ({ data, experienceData, projectsData, setData}) => {
- 
+const Resume = ({ data, experienceData, projectsData, setData }) => {
   return (
     <div className="resume">
-      <Header
-        data={data}
-    
-        
-      />
-      <Education
-        data={data}
-      
-        
-      />
+      <Header data={data} />
+      <Education data={data} />
       <Experience
-        experienceData={experienceData} 
-        data = {data}
-        setData = {setData}
-      />
-      <Projects
-        projectsData={projectsData}
+        experienceData={experienceData}
         data={data}
-        setData = {setData}
-     
+        setData={setData}
       />
+      <Projects projectsData={projectsData} data={data} setData={setData} />
     </div>
   );
 };

@@ -32,11 +32,14 @@ const Experience = ({ experienceData, data, setData}) => {
               Delete Section
             </button>
           )}
-          <ul>
-            {experience.description.map((description) => (
-              <li key={description.name}> {description} </li>
-            ))}
-          </ul>
+         <ul>
+  {experience.description && (
+    experience.description.map((description, index) => (
+      <li key={index}>{description}</li>
+    ))
+  )}
+</ul>
+
         </div>
       ))}
     </div>
