@@ -1,5 +1,5 @@
 
-const ExperienceForm = ({handleInput}) => {
+const ExperienceForm = ({handleInput, index}) => {
 
   return (
     <>
@@ -10,7 +10,7 @@ const ExperienceForm = ({handleInput}) => {
           type="text"
           name="title"
           data-section="experience"
-          data-sectionindex = {0}
+          data-sectionindex = {index}
           onChange={handleInput}
         />
 
@@ -19,7 +19,7 @@ const ExperienceForm = ({handleInput}) => {
         type="text"
         name = 'company'
         data-section = 'experience'
-        data-sectionindex = {0}
+        data-sectionindex = {index}
         onChange = {handleInput}
         />
 
@@ -28,7 +28,7 @@ const ExperienceForm = ({handleInput}) => {
         type="text"
         name = 'duration'
         data-section = 'experience'
-        data-sectionindex = {0}
+        data-sectionindex = {index}
         onChange = {handleInput}
         />
 
@@ -37,7 +37,7 @@ const ExperienceForm = ({handleInput}) => {
         type="text"
         name = 'description'
         data-section = 'experience'
-        data-sectionindex = {0}
+        data-sectionindex = {index}
         data-arrayindex = {0}
         onChange = {handleInput}
         id = 'description0'
@@ -46,7 +46,7 @@ const ExperienceForm = ({handleInput}) => {
         type="text"
         name = 'description'
         data-section = 'experience'
-        data-sectionindex = {0}
+        data-sectionindex = {index}
         data-arrayindex = {1}
         onChange = {handleInput}
         id = 'description1'
@@ -55,7 +55,7 @@ const ExperienceForm = ({handleInput}) => {
         type="text"
         name = 'description'
         data-section = 'experience'
-        data-sectionindex = {0}
+        data-sectionindex = {index}
         data-arrayindex = {2}
         onChange = {handleInput}
         id = 'description2'

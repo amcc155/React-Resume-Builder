@@ -17,6 +17,7 @@ function App() {
     if (!updatedData[section][sectionindex]) {
       updatedData[section][sectionindex] = {};
     }
+
     //if it the object value is list, specify the index in the array it is going to,
     if (Array.isArray(updatedData[section][sectionindex][name])) {
       updatedData[section][sectionindex][name][arrayindex] = value;
