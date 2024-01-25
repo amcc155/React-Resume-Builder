@@ -14,6 +14,4 @@
   ### Things to add to the project
   - Feature for user to download the Resume
   - Style it more(I was more focused on functionality for this projects)
-
-### Bugs to fix
-- When adding a new form, new description does not render 
+ 
