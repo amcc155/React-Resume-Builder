@@ -18,12 +18,18 @@ function App() {
       updatedData[section][sectionindex] = {};
     }
 
+    if (
+      arrayindex &&
+      !Array.isArray(updatedData[section][sectionindex][name])
+    ) {
+      updatedData[section][sectionindex][name] = [];
+    }
     //if it the object value is list, specify the index in the array it is going to,
-    if (arrayindex) {
+    if (Array.isArray(updatedData[section][sectionindex][name])) {
       updatedData[section][sectionindex][name][arrayindex] = value;
       setData(updatedData);
-     
-      
+
+      /// if it is jsut normal key and value pair
     } else if (sectionindex) {
       // if there is more than one object, specify the index of the object
       updatedData[section][sectionindex][name] = value;
@@ -32,8 +38,6 @@ function App() {
       updatedData[section][name] = value;
       setData(updatedData);
     }
-
-    console.log(data)
   };
 
   return (
