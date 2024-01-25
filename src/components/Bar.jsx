@@ -16,7 +16,7 @@ function Bar({ handleInput, setData, data}) {
   });
 
   const handleForm = (formType) => {
-    const form = forms[formType];
+    const form = forms[formType]
     const index = form.length;
     const newForm = formType === "education" ? (
       <EducationForm key={index} handleInput={handleInput} index={index} />
